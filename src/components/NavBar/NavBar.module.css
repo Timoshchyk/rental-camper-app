@@ -1,0 +1,24 @@
+.link {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--main);
+    display: inline-block;
+    /* position: relative; */
+    margin-bottom: 24px;
+}
+
+.active {}
+
+.active::after {
+    text-decoration: underline;
+    content: "";
+    /* position: absolute; */
+    left: 0;
+    right: 0;
+    bottom: -25px;
+    height: 4px;
+    background-color: #e44848;
+    z-index: -1;
+}
